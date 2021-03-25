@@ -45,6 +45,9 @@ export const Article = styled.details`
         width: 9px;
         height: 5px;
     }
+    &[open] * {
+        max-width: 100%;
+    }
     &[open] summary ~ * {
     animation: sweep .5s ease-in-out;
     }
@@ -70,6 +73,9 @@ export const ArticeTitle = styled.summary`
         content: url(${arrowDown});
         width: 9px;
         height: 5px;
+    }
+    &:hover {
+        cursor: pointer;
     }
     
 `
