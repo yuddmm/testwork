@@ -1,19 +1,12 @@
-import { ArticeTitle, Article, Content, ContentSubTitle, ContentTitle } from "../styled/Content"
+import { Content, ContentSubTitle, ContentTitle } from "../styled/Content"
+import { ArticlesContainer } from "./ArticlesContainer"
 
 export const ContentComponent = () => {
     return (
         <Content>
             <ContentSubTitle>БОРТОВОЙ ЖУРНАЛ</ContentSubTitle>
             <ContentTitle>БОРТОВОЙ ЖУРНАЛ</ContentTitle>
-            <Article>
-                <ArticeTitle>Топ-6 сервисов</ArticeTitle>
-            </Article>
-            <Article>
-                <ArticeTitle>Топ-6 сервисов</ArticeTitle>
-            </Article>
-            <Article>
-                <ArticeTitle>Топ-6 сервисов</ArticeTitle>
-            </Article>
+            <ArticlesContainer />
         </Content>
     )
 }

@@ -30,3 +30,13 @@ code {
     monospace;
 }
 
+body::-webkit-scrollbar {
+  width: 8px;              
+}
+body::-webkit-scrollbar-track {
+  background: rgba(49,49,49,0.2);        
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(5,5,5,0.4);    
+  border-radius: 20px;       
+}

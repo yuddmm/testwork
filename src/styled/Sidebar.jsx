@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import {NavLink} from 'react-router-dom'
 import logo from './../images/logo.png'
 import menu_account from './../images/account.png'
 import menu_vps from './../images/vps.png'
@@ -9,7 +8,7 @@ import menu_bort from './../images/bort.png'
 const StSidebar = styled.aside`
     display: flex;
     flex-direction: column;
-    width: 265px;
+    min-width: 265px!important;
     height: inherit;
     box-sizing: border-box;
     background-color: #062436;
@@ -46,6 +45,9 @@ export const NavigationItem = styled.a`
         background-color: #15526A;
         border-left: solid 6px #3DBDF6;
         padding: 0 14px;
+        &:hover {
+            background-color: #15526A;
+        }
     `}
 `
 
